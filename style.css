@@ -1,0 +1,205 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common and utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #2D25A0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.container{
+    background-color: white;
+    width: 1050px;
+    margin: 100px 0;
+}
+/* banner section */
+
+.top-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.banner-text{
+    width: 500px;
+}
+.banner-text h1{
+    color: white;
+    font-size: 64px;
+}
+.banner-btn{
+    padding: 15px 40px;
+    background-color:  #E02C6D;
+    border: none;
+}
+.banner-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.banner-img img{
+    width:800px;
+    transition:1.5s;
+  
+}
+/* banner animation */
+.banner-img:hover img{
+    width: 900px;
+   
+}
+
+/* players section */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 27px;
+}
+.player{
+    width: 330px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.player .player-img img{
+    width: 100%;
+}
+.player-details h3{
+    font-size: 28px;
+}
+.player-details p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* extra section */
+.card{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.card-img img{
+    width: 350px;
+    height: 100%;
+}
+.card-text{
+    width: 500px;
+   padding-top: 90px;
+}
+
+/* footer section */
+footer{
+    text-align: center;
+}
+.footer-img img{
+    width: 500px;
+}
+.social-icon img{
+    width: 50px;
+    height: 50px;
+}
+footer p{
+    font-size: 18px;
+    font-weight: 700;
+}
+footer span{
+    color: #E02C6D;
+}
+footer .Fahimul{
+    color: #2D25A0;
+}
+/* resfonsive and media Queries */
+
+/* Mobile Devics */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    .top-banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-text{
+        width: 100%;
+
+    }
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .banner-img img{
+        width:100%;
+        padding-top: 20px;
+      
+    }
+    .players{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-text{
+        width: 250px;
+       padding-top: 20px;
+    }
+    .footer-img img{
+        width: 300px;
+    }
+}
+/* tablet Device */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    .top-banner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-text{
+        width: 100%;
+
+    }
+    .banner-text h1{
+        font-size:64px;
+    }
+    .banner-img img{
+        width:100%;
+        padding-top: 20px;
+      
+    }
+    .players{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .card{
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-text{
+        width: 250px;
+       padding-top: 20px;
+    }
+    .footer-img img{
+        width: 400px;
+    }
+}
